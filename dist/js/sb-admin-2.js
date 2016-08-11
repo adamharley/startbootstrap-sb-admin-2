@@ -5,13 +5,13 @@ $(function() {
     // collapses the sidebar on window resize.
     // Sets the min-height of #page-wrapper to window size
     $(window).bind("load resize", function() {
-        var topOffset = 50;
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
         if (width < 768) {
             $('div.navbar-collapse').addClass('collapse');
-            topOffset = 100; // 2-row-menu
+            var topOffset = 100; // 2-row-menu
         } else {
             $('div.navbar-collapse').removeClass('collapse');
+			var topOffset = 50;
         }
 
         var height = ((window.innerHeight > 0) ? window.innerHeight : screen.height) - 1;
