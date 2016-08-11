@@ -16,9 +16,7 @@ $(function() {
 
         var height = ((window.innerHeight > 0) ? window.innerHeight : screen.height) - 1;
         height = height - topOffset;
-        if (height < 1) {
-            height = 1;
-        } else if (height > topOffset) {
+        if (height > topOffset) {
             $("#page-wrapper").css("min-height", (height) + "px");
         }
     });
