@@ -11,7 +11,7 @@ $(function() {
             var topOffset = 100; // 2-row-menu
         } else {
             $('div.navbar-collapse').removeClass('collapse');
-			var topOffset = 50;
+            var topOffset = 50;
         }
 
         var height = ((window.innerHeight > 0) ? window.innerHeight : screen.height) - 1;
